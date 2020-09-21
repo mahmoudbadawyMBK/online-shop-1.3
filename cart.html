@@ -1,0 +1,87 @@
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cart</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="css/font-awesome.css"> -->
+
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+    table{
+        text-align: left;
+    }
+    span{
+    font-size: 28px;
+    font-weight: 900;
+    }
+    #user{
+        color: orangered;
+    }
+    </style>
+
+</head>
+<body>
+
+
+  <!-- HEADER -->
+  <div style="height: 100px; background-color: #2f2f2f;">
+      <nav>
+          <div class="row">
+             <ul class="main-nav">
+                <li id="signout"><a href="" >Sign out </a></li>
+                <li id="signup"><a href="register.html" >Sign up </a></li>
+                <li id="login"><a href="login.html" >login </a></li>
+                <li id="user"></li>
+                <li><a href="cart.html">cart </a></li>
+                <li><a href="contact.html">contact Us </a></li>
+                <li><a href="about-us.html">about us </a></li>
+                <!-- <li><a href="category.html">category</a></li> -->
+                <li><a href="index.html">home</a></li>
+              </ul>
+
+              <img src="imgs/slideshow/f2.jpg" alt="omnifood logo" class="logo" style="margin-left: 100px;">
+
+          </div>
+      </nav>
+
+  </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">name</th>
+                            <th scope="col">price</th>
+                            <th scope="col">image</th>
+                            <th> count</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+            </div>
+        </div>
+        <span> total:
+        <input type="number" name="" id="total" disabled>
+    </span>
+    <br>
+    <a type="button" id="confirm"  class="btn btn-success btn-lg">buy</a>
+    </div>
+
+
+
+    <script src="js/plugins/jquery/jquery-2.2.4.min.js"></script>
+    <script src="js/plugins/popper.min.js"></script>
+    <script src="js/plugins/bootstrap.min.js"></script>
+    <script src="js/products.js"> </script>
+
+<script> switch_btns();</script>
+    <script src="js/addcart.js"></script>
+</body>
+</html>

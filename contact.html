@@ -1,0 +1,181 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    
+        <title> contact</title>
+        
+    
+    
+        <!-- Custom styles for this template -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link href="css/simple-sidebar.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <!-- owl.carousel -->
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+
+
+
+
+    <style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        /* margin-top: 5%; */
+    
+        }
+    * {box-sizing: border-box;}
+
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 12px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    .container {
+      width: 70%;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+      margin: auto;
+    }
+
+    h1,h5{
+        text-align: center;
+        color: lightseagreen;
+    }
+    h5{
+        color: black;
+    }
+    span{
+    text-align: center;
+    }
+            #useremailerror,#usernameerror{
+                color: red;
+                font-size: 12px;
+                display: none;
+            }
+            label{
+                font-family: Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            }
+
+    /******************************/
+    .header{
+       height: 974px;
+       background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(../imgs/headerbg.jpg);
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-attachment: fixed;
+                
+    }
+    .logo2{
+        height: 100px;
+        width: auto;
+        float:left;
+        margin-top: 50px;
+        margin-left: 100px;
+      
+    }
+    #user{
+      color:orangered;
+    }
+    </style>
+</head>
+<body>
+ 
+  <!-- HEADER -->
+  <div class="header" id="home-section">
+      <nav>
+        <div class="row">
+          <ul class="main-nav">
+              <li id="signout"><a href="" >Sign out </a></li>
+              <li id="signup"><a href="register.html" >Sign up </a></li>
+              <li id="login"><a href="login.html" >login </a></li>
+              <li id="user"></li>
+              <li><a href="cart.html" style="color:yellow">cart </a></li>
+              <li><a href="contact.html">contact Us </a></li>
+              <li><a href="about-us.html">about us </a></li>
+              <!-- <li><a href="category.html">category</a></li> -->
+              <li><a href="index.html">home</a></li>
+          </ul>
+  
+          <img src="imgs/slideshow/f2.jpg" alt="omnifood logo" class="logo logo2">
+  
+        </div>
+      </nav>
+
+
+
+
+
+      <br> <br>
+      <div class="dark-overlay">
+
+          
+          <div class="container">
+
+              <h1>Contact Form</h1>
+
+          <h5>Please complete the form below and we will get back to you within 3 business days.</h5>
+          
+            <form  method="POST" action="#" id="contactForm">
+              <label for="fullname">Full Name</label>
+              <input type="text" id="fullname" class="" name="fullname" placeholder="Your full name..">
+              <span id="usernameerror">Full Name Must Be from 5 to 20 Letters </span>
+          
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" class="" placeholder="Your email ..">
+              <span id="useremailerror" >Invalid Email( must contain @__.com )  </span>
+             
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write your message .." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+          
+            
+      </div><!-- dark-overlay -->
+  
+  
+    </div>
+
+
+
+    <script src="js/plugins/jquery/jquery-2.2.4.min.js"></script>
+    <script src="js/products.js"> </script>
+    <script src="js/notify.min.js"></script>
+    <script> switch_btns();</script>
+    
+    <script src="js/contact.js"></script>
+
+
+
+</body>
+</html>

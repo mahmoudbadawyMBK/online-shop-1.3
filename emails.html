@@ -1,0 +1,72 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Emails</title>
+  <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-Dark mb-3">
+          <a class="navbar-brand text-warning" href="index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item ">
+                <a class="nav-link" href="datatable.html">Stock </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="emails.html">Mail <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="cart.html">Cart</a>
+                </li>
+            
+          </div>
+        </nav>
+        
+    <table id="dataTables">
+      <thead>
+        <tr>
+          <th>Email</th>
+          <th>Name</th>
+          <th>Subject</th>
+        </tr>
+      </thead>
+      <tbody id="email">
+
+      </tbody>
+
+
+
+    </table>
+  </div>
+
+  <script src="js/plugins/jquery/jquery-2.2.4.min.js"></script>
+  <script src="js/plugins/bootstrap.min.js"></script>
+  <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+  <script>
+
+    // query emails from local storage  
+    var emails = JSON.parse(localStorage.getItem("contactsEmails"));
+
+    //  prep of data to be displayed 
+    emaildiv = document.getElementById("email");
+    for (let i = 0; i < emails.length; i++) {
+      html = '<tr><td>' + emails[i].email + '</td><td>' + emails[i].fullname + '</td><td>' + emails[i].subject + '</td></tr>';
+      emaildiv.innerHTML += html;
+    }
+    
+    // data table code 
+    $(document).ready(function () {
+      $("#dataTables").dataTable();
+    });
+  </script>
+</body>
+
+</html>
